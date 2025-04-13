@@ -1,0 +1,66 @@
+
+# Environment files
+.env
+*.env
+!.env.example
+
+# Docker volumes and data
+volumes/
+*.volume
+data/
+
+# Logs
+logs/
+*.log
+
+# Backup files
+*.bak
+*.gzip
+*.backup
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Backup scripts output
+backups/
+
+# Ignore specific Docker and DevOps related files
+docker-compose.override.yml
+docker-compose.local.yml
+
+# Python-related ignores
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Node.js related (for any frontend or scripts)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignore installation artifacts
+*.installed
+
+# IDE and editor folders
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore any local configuration or secret files
+*.local
+secrets/
+
+# SSH and key files (be careful!)
+*.pem
+*.key
