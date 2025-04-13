@@ -46,18 +46,18 @@ services:
     networks:
       - proteus-network
 
-  instagram-service:
-    build:
-      context: ./instagram-service
-      dockerfile: Dockerfile
-    depends_on:
-      - api
-    environment:
-      - API_URL=http://api:8000/api
-      - INSTAGRAM_REFRESH_INTERVAL=3600
-    restart: unless-stopped
-    networks:
-      - proteus-network
+ # instagram-service:
+    #build:
+    #  context: ./instagram-service
+     # dockerfile: Dockerfile
+    #d#epends_on:
+    #  - api
+   # environment:
+   #   - API_URL=http://api:8000/api
+    #  - INSTAGRAM_REFRESH_INTERVAL=3600
+    #restart: unless-stopped
+    #networks:
+    #  - proteus-network
 
   postgres:
     image: postgres:15
